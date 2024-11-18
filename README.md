@@ -8,7 +8,10 @@ Postman collection created based on - https://thetestingworldapi.com/Help
 * JavaScript (optional): For writing scripts to validate responses and handle dynamic data.
 * CI/CD Integration (optional): Tools like Jenkins for continuous testing.
 
- # Install Newman
+# Install Newman
  Install Newman globally using npm:
 ```
 npm install -g newman
+```
+# Install Newman
+
