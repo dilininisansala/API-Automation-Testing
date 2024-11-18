@@ -8,11 +8,6 @@ Postman collection created based on - https://thetestingworldapi.com/Help
 * JavaScript (optional): For writing scripts to validate responses and handle dynamic data.
 * CI/CD Integration (optional): Tools like Jenkins for continuous testing.
 
-# Install Newman
- Install Newman globally using npm:
-```
-npm install -g newman
-```
 # Creating your first requests in Postman
 This repository includes tests for the following scenarios:
 * GET: Verifying if the endpoint returns the correct data.
@@ -24,7 +19,6 @@ This repository includes tests for the following scenarios:
 
 # Positive Test cases
 ![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
-
 
 # Negative Test casess
 To test negative scenarios, you should use invalid or unexpected inputs, such as:
@@ -66,7 +60,10 @@ Run Tests in Postman
 * Select the collection and click Run to execute the tests.
 
 Run Tests Using Newman
-* After cloning the repo, navigate to the folder containing the collection file.
+* Install Newman globally using npm:
+```
+npm install -g newman
+```
 * Run the tests using the following command:
 ```
 newman run Api-Automation-Testing.postman_collection.json
