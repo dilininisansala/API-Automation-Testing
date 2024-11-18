@@ -20,7 +20,7 @@ This repository includes tests for the following scenarios:
 # Positive Test cases
 ![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
 
-# Negative Test casess
+# Negative Test cases
 To test negative scenarios, you should use invalid or unexpected inputs, such as:
 * Invalid endpoint: A non-existent or wrong URL path.
 * Invalid headers: Missing or incorrect headers, such as Authorization or Content-Type.
