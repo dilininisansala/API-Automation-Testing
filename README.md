@@ -13,18 +13,19 @@ Postman collection created based on - https://thetestingworldapi.com/Help
 ```
 npm install -g newman
 ```
-# Test Cases
+# Creating your first requests in Postman
 This repository includes tests for the following scenarios:
 * GET: Verifying if the endpoint returns the correct data.
 * POST: Ensuring data is correctly created on the server.
 * PUT: Testing updates to existing resources.
 * DELETE: Ensuring resources can be deleted successfully.
+![image 1](https://github.com/user-attachments/assets/ddca5151-2090-47e2-bc4e-869bbf7216c9)
 
-Test cases
+# Test cases
 ![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
 
 Negative Tests: Handling invalid inputs and ensuring correct error codes are returned.
-![image 1](https://github.com/user-attachments/assets/ddca5151-2090-47e2-bc4e-869bbf7216c9)  
+
 
 # Running Tests
 Run Tests in Postman
