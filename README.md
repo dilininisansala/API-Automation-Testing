@@ -53,6 +53,9 @@ pm.test("Validate the Error message", function () {
     pm.expect(jsonData.Message).to.eql("An error has occurred.");
 });
 ```
+# Why Use console.log() in Postman
+In Postman, console.log() is used in scripts (Pre-request or Tests) to print messages or variable values to the Postman Console. It is a helpful tool for debugging, inspecting variables, and understanding the flow of your requests and responses. To view the output from console.log() in Postman, you need to open the Postman Console.
+![Screenshot 2024-11-19 000454](https://github.com/user-attachments/assets/89379fd8-3365-4f9d-9d1f-2eb0ffbc9717)
 
 # Running Tests
 Run Tests in Postman
