@@ -19,13 +19,46 @@ This repository includes tests for the following scenarios:
 * POST: Ensuring data is correctly created on the server.
 * PUT: Testing updates to existing resources.
 * DELETE: Ensuring resources can be deleted successfully.
+  
 ![image 1](https://github.com/user-attachments/assets/ddca5151-2090-47e2-bc4e-869bbf7216c9)
 
-# Test cases
+# Positive Test cases
 ![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
 
-Negative Tests: Handling invalid inputs and ensuring correct error codes are returned.
 
+# Negative Test casess
+To test negative scenarios, you should use invalid or unexpected inputs, such as:
+* Invalid endpoint: A non-existent or wrong URL path.
+* Invalid headers: Missing or incorrect headers, such as Authorization or Content-Type.
+* Invalid request body: Send malformed or incomplete JSON or XML data.
+* Invalid query parameters: Incorrect or missing required parameters.
+* Invalid authentication: Incorrect or expired tokens for APIs that require authentication.
+
+![Screenshot 2024-11-18 235516](https://github.com/user-attachments/assets/6e6e0edb-0fc1-480d-9c47-3984f65e80dd)
+
+Validate Response Code
+Ensure that the response code matches the expected error status. Common HTTP status codes for negative tests include:
+* 400 Bad Request: The server cannot process the request due to client error (e.g., invalid data).
+* 401 Unauthorized: The client lacks valid authentication credentials.
+* 403 Forbidden: The client does not have permission to access the resource.
+* 404 Not Found: The endpoint or resource does not exist.
+* 500 Internal Server Error: A general server-side error (often indicates unhandled cases).
+
+Write Tests in Postman
+```
+pm.test("Status code is 500", function () {
+    pm.response.to.have.status(500);
+});
+
+pm.test("Validate status code string", function () {
+    pm.response.to.have.status("Internal Server Error");
+});
+
+pm.test("Validate the Error message", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.Message).to.eql("An error has occurred.");
+});
+```
 
 # Running Tests
 Run Tests in Postman
