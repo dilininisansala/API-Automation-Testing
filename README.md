@@ -104,6 +104,7 @@ npm install -g newman
 ```
 newman run Api-Automation-Testing.postman_collection.json
 ```
+![Screenshot 2024-11-19 101925](https://github.com/user-attachments/assets/2eb5acb7-29a5-474b-9844-76710415715a)
 
 # Monitors in Postman
 * Set a timer to run all requests automatically every X hours/days/weeks
