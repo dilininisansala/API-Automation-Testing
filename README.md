@@ -113,5 +113,7 @@ newman run Api-Automation-Testing.postman_collection.json
 * Receive emails automatically for every error/failure in the tests.
 * Automatically retest X times if a test fails.
 * Set a maximum timeout for requests.
-
+![Screenshot 2024-11-19 102817](https://github.com/user-attachments/assets/cc8e1f29-6899-41f0-9c6e-d40d1aff53d5)
+![Screenshot 2024-11-19 103254](https://github.com/user-attachments/assets/5ede78aa-21ed-48d8-88f7-5cd23325bda8)
+![Screenshot 2024-11-19 103224](https://github.com/user-attachments/assets/512fcccc-ddff-4426-b7a3-d210c7bab660)
 
