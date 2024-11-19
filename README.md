@@ -117,3 +117,12 @@ newman run Api-Automation-Testing.postman_collection.json
 ![Screenshot 2024-11-19 103254](https://github.com/user-attachments/assets/5ede78aa-21ed-48d8-88f7-5cd23325bda8)
 ![Screenshot 2024-11-19 103224](https://github.com/user-attachments/assets/512fcccc-ddff-4426-b7a3-d210c7bab660)
 
+# Automate with CI/CD
+You can integrate Jenkins with Postman for automating API testing. This setup allows you to run Postman collections as part of a CI/CD pipeline.
+* Open Postman and export the collection you want to test.
+* Login to Jenkins.
+* Click 'New Item' > name the project, and select "Freestyle Project"
+* Then configure the Job, Under 'Build Steps', select Execute Windows batch command" (Windows).
+* Add a script to execute the Postman collection using Newman.
+![Screenshot 2024-11-19 104545](https://github.com/user-attachments/assets/4fb1e1c2-a110-4aa0-9ddd-691750c3f64c)
+
