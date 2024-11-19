@@ -20,6 +20,39 @@ This repository includes tests for the following scenarios:
 # Positive Test cases
 ![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
 
+```
+// Status Code Validation
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+    console.log("Status code is 200");
+});
+
+//Request Body Validation
+pm.test("Request body validation", function () {
+    let requestBody = pm.request.body.raw ? JSON.parse(pm.request.body.raw) : {};
+    pm.expect(requestBody).to.have.property("id").that.is.a("number");
+    pm.expect(requestBody).to.have.property("first_name").that.is.a("string").and.not.empty;
+    pm.expect(requestBody).to.have.property("middle_name").that.is.a("string"); // Can be empty
+    pm.expect(requestBody).to.have.property("last_name").that.is.a("string").and.not.empty;
+    pm.expect(requestBody).to.have.property("date_of_birth").that.is.a("string").and.match(/^\d{2}-\d{2}-\d{4}$/);
+
+    console.log("Request body is valid");
+});
+
+// Response Body Validation
+pm.test("Response body validation", function () {
+    const responseBody = pm.response.json();
+    
+    pm.expect(responseBody).to.have.property("id").that.is.a("number");
+    pm.expect(responseBody).to.have.property("first_name").that.is.a("string").and.not.empty;
+    pm.expect(responseBody).to.have.property("middle_name").that.is.a("string"); 
+    pm.expect(responseBody).to.have.property("last_name").that.is.a("string").and.not.empty;
+    pm.expect(responseBody).to.have.property("date_of_birth").that.is.a("string").and.match(/^\d{2}-\d{2}-\d{4}$/);
+
+    console.log("Response body is valid");
+});
+```
+
 # Negative Test cases
 To test negative scenarios, you should use invalid or unexpected inputs, such as:
 * Invalid endpoint: A non-existent or wrong URL path.
