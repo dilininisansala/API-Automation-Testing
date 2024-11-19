@@ -2,7 +2,7 @@
 This repository contains a collection of automated API test scripts written to ensure the robustness of API endpoints. It includes tests for various HTTP methods such as GET, POST, PUT, and DELETE, focusing on validating response codes, body content, headers, and performance.
 Postman collection created based on - https://thetestingworldapi.com/Help
 
-# Technologies Used
+# Technologies used
 * Postman: For writing and managing API tests.
 * Newman: CLI tool to run Postman collections and integrate them into CI/CD pipelines.
 * JavaScript (optional): For writing scripts to validate responses and handle dynamic data.
@@ -102,7 +102,7 @@ Run Tests Using Newman
 npm install -g newman
 ```
 * Open Postman and export the collection file (e.g., Api-Automation-Tests.postman_collection.json)
-* Run the tests using the following command:
+* Run the tests using the following command
 ```
 newman run Api-Automation-Testing.postman_collection.json
 ```
