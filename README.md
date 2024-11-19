@@ -118,6 +118,7 @@ newman run Api-Automation-Testing.postman_collection.json
 ![Screenshot 2024-11-19 103224](https://github.com/user-attachments/assets/512fcccc-ddff-4426-b7a3-d210c7bab660)
 
 # Automate with CI/CD
+Integrate Jenkins with Postman
 You can integrate Jenkins with Postman for automating API testing. This setup allows you to run Postman collections as part of a CI/CD pipeline.
 * Open Postman and export the collection you want to test.
 * Login to Jenkins.
@@ -126,3 +127,14 @@ You can integrate Jenkins with Postman for automating API testing. This setup al
 * Add a script to execute the Postman collection using Newman.
 ![Screenshot 2024-11-19 104545](https://github.com/user-attachments/assets/4fb1e1c2-a110-4aa0-9ddd-691750c3f64c)
 
+Integrate Jenkins with Postman
+Integrating GitHub Actions with Postman allows you to automate the testing of your APIs directly from your GitHub repository.
+* Create a GitHub Actions Workflow.
+* Create a new file (e.g., postman.yml)
+* Copy the YAML content from  Postman CLI Configuration page to set up the workflow
+* Monitor the workflow execution under the Actions tab in your GitHub repository
+![1](https://github.com/user-attachments/assets/ece4d90f-a803-4a92-a72a-55af95525a5a)
+![2](https://github.com/user-attachments/assets/185f5a81-819e-4fc1-8409-2eb4733cc664)
+![3](https://github.com/user-attachments/assets/c7a4194d-2498-4518-89bc-095ac97c214e)
+![4](https://github.com/user-attachments/assets/fa1cae00-725c-43d3-9909-f400314829c8)
+![5](https://github.com/user-attachments/assets/ffe318d4-4014-477c-8cd5-84bc810c0ec0)
