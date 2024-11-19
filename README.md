@@ -1,4 +1,4 @@
-# API-Automation-Testing
+# API Automation Testing
 This repository contains a collection of automated API test scripts written to ensure the robustness of API endpoints. It includes tests for various HTTP methods such as GET, POST, PUT, and DELETE, focusing on validating response codes, body content, headers, and performance.
 Postman collection created based on - https://thetestingworldapi.com/Help
 
