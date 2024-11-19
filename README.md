@@ -3,17 +3,17 @@ This repository contains a collection of automated API test scripts written to e
 Postman collection created based on - https://thetestingworldapi.com/Help
 
 # Technologies used
-* Postman: For writing and managing API tests.
-* Newman: CLI tool to run Postman collections and integrate them into CI/CD pipelines.
-* JavaScript (optional): For writing scripts to validate responses and handle dynamic data.
-* CI/CD Integration (optional): Tools like Jenkins for continuous testing.
+* **Postman**: For writing and managing API tests.
+* **Newman**: CLI tool to run Postman collections and integrate them into CI/CD pipelines.
+* **JavaScript**: For writing scripts to validate responses and handle dynamic data.
+* **CI/CD Integration**: Tools like Jenkins for continuous testing.
 
 # Creating your first requests in Postman
 This repository includes tests for the following scenarios:
-* GET: Verifying if the endpoint returns the correct data.
-* POST: Ensuring data is correctly created on the server.
-* PUT: Testing updates to existing resources.
-* DELETE: Ensuring resources can be deleted successfully.
+* **GET**: Verifying if the endpoint returns the correct data.
+* **POST**: Ensuring data is correctly created on the server.
+* **PUT**: Testing updates to existing resources.
+* **DELETE**: Ensuring resources can be deleted successfully.
   
 ![image 1](https://github.com/user-attachments/assets/ddca5151-2090-47e2-bc4e-869bbf7216c9)
 
@@ -55,21 +55,21 @@ pm.test("Response body validation", function () {
 
 # Negative Test cases
 To test negative scenarios, you should use invalid or unexpected inputs, such as:
-* Invalid endpoint: A non-existent or wrong URL path.
-* Invalid headers: Missing or incorrect headers, such as Authorization or Content-Type.
-* Invalid request body: Send malformed or incomplete JSON or XML data.
-* Invalid query parameters: Incorrect or missing required parameters.
-* Invalid authentication: Incorrect or expired tokens for APIs that require authentication.
+* **Invalid endpoint**: A non-existent or wrong URL path.
+* **Invalid headers**: Missing or incorrect headers, such as Authorization or Content-Type.
+* **Invalid request body**: Send malformed or incomplete JSON or XML data.
+* **Invalid query parameters**: Incorrect or missing required parameters.
+* **Invalid authentication**: Incorrect or expired tokens for APIs that require authentication.
 
 ![Screenshot 2024-11-18 235516](https://github.com/user-attachments/assets/6e6e0edb-0fc1-480d-9c47-3984f65e80dd)
 
 Validate Response Code
 Ensure that the response code matches the expected error status. Common HTTP status codes for negative tests include:
-* 400 Bad Request: The server cannot process the request due to client error (e.g., invalid data).
-* 401 Unauthorized: The client lacks valid authentication credentials.
-* 403 Forbidden: The client does not have permission to access the resource.
-* 404 Not Found: The endpoint or resource does not exist.
-* 500 Internal Server Error: A general server-side error (often indicates unhandled cases).
+* **400 Bad Request**: The server cannot process the request due to client error (e.g., invalid data).
+* **401 Unauthorized**: The client lacks valid authentication credentials.
+* **403 Forbidden**: The client does not have permission to access the resource.
+* **404 Not Found**: The endpoint or resource does not exist.
+* **500 Internal Server Error**: A general server-side error (often indicates unhandled cases).
 
 Write Tests in Postman
 ```
@@ -91,12 +91,12 @@ In Postman, console.log() is used in scripts (Pre-request or Tests) to print mes
 ![Screenshot 2024-11-19 000454](https://github.com/user-attachments/assets/89379fd8-3365-4f9d-9d1f-2eb0ffbc9717)
 
 # Running Tests
-Run Tests in Postman
+## Run Tests in Postman
 * Select the collection and click Run to execute the tests.
 ![Screenshot 2024-11-19 102136](https://github.com/user-attachments/assets/f9c16e39-3d75-496f-88ad-4c8ce4b9010f)
 ![Screenshot 2024-11-19 102219](https://github.com/user-attachments/assets/d8178e22-4523-4a24-9dbb-07393e038526)
 
-Run Tests Using Newman
+## Run Tests Using Newman
 * Install Newman globally using npm:
 ```
 npm install -g newman
@@ -118,7 +118,7 @@ newman run Api-Automation-Testing.postman_collection.json
 ![Screenshot 2024-11-19 103224](https://github.com/user-attachments/assets/512fcccc-ddff-4426-b7a3-d210c7bab660)
 
 # Automate with CI/CD
-Integrate Jenkins with Postman
+## Integrate Jenkins with Postman
 You can integrate Jenkins with Postman for automating API testing. This setup allows you to run Postman collections as part of a CI/CD pipeline.
 * Open Postman and export the collection you want to test.
 * Login to Jenkins.
@@ -127,7 +127,7 @@ You can integrate Jenkins with Postman for automating API testing. This setup al
 * Add a script to execute the Postman collection using Newman.
 ![Screenshot 2024-11-19 104545](https://github.com/user-attachments/assets/4fb1e1c2-a110-4aa0-9ddd-691750c3f64c)
 
-Integrate Jenkins with Postman
+## Integrate Jenkins with Postman
 Integrating GitHub Actions with Postman allows you to automate the testing of your APIs directly from your GitHub repository.
 * Create a GitHub Actions Workflow.
 * Create a new file (e.g., postman.yml)
