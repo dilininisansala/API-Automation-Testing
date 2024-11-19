@@ -18,7 +18,7 @@ This repository includes tests for the following scenarios:
 ![image 1](https://github.com/user-attachments/assets/ddca5151-2090-47e2-bc4e-869bbf7216c9)
 
 # Positive Test cases
-![Image 2](https://github.com/user-attachments/assets/28779a36-9242-49b6-9429-37835a1fc4ba)
+![Screenshot 2024-11-19 091419](https://github.com/user-attachments/assets/7dade5e8-2134-4c6b-95fd-9bb975f13827)
 
 ```
 // Status Code Validation
