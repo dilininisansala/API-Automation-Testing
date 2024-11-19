@@ -92,14 +92,16 @@ In Postman, console.log() is used in scripts (Pre-request or Tests) to print mes
 
 # Running Tests
 Run Tests in Postman
-* Open Postman and load the collection file (e.g., API-Automation-Tests.postman_collection.json).
 * Select the collection and click Run to execute the tests.
+![Screenshot 2024-11-19 102136](https://github.com/user-attachments/assets/f9c16e39-3d75-496f-88ad-4c8ce4b9010f)
+![Screenshot 2024-11-19 102219](https://github.com/user-attachments/assets/d8178e22-4523-4a24-9dbb-07393e038526)
 
 Run Tests Using Newman
 * Install Newman globally using npm:
 ```
 npm install -g newman
 ```
+* Open Postman and export the collection file (e.g., Api-Automation-Tests.postman_collection.json)
 * Run the tests using the following command:
 ```
 newman run Api-Automation-Testing.postman_collection.json
