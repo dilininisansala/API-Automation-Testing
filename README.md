@@ -127,7 +127,7 @@ You can integrate Jenkins with Postman for automating API testing. This setup al
 * Add a script to execute the Postman collection using Newman.
 ![Screenshot 2024-11-19 104545](https://github.com/user-attachments/assets/4fb1e1c2-a110-4aa0-9ddd-691750c3f64c)
 
-## Integrate Jenkins with Postman
+## Integrate GitHub Actions with Postman
 Integrating GitHub Actions with Postman allows you to automate the testing of your APIs directly from your GitHub repository.
 * Create a GitHub Actions Workflow.
 * Create a new file (e.g., postman.yml)
